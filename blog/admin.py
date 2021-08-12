@@ -2,6 +2,7 @@ from django.contrib import admin
 from .models import Article, Category
 
 
+#new change
 @admin.action(description='انتشار مقالات انتخاب شده')
 def make_published(modeladmin, request, queryset):
     rows_updated = queryset.update(status='p')
