@@ -3,7 +3,7 @@ from django.views.generic import  ListView, DetailView
 from django.core.paginator import Paginator
 from .models import Article, Category
 
-
+#first feature
 class ArticleList(ListView):
     #model = Article
     queryset = Article.objects.published()
